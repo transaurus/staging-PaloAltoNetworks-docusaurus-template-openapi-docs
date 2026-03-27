@@ -1,0 +1,10 @@
+{
+  "sourceUrl": "https://github.com/PaloAltoNetworks/docusaurus-template-openapi-docs",
+  "branch": "main",
+  "docusaurusRoot": ".",
+  "configFile": "docusaurus.config.ts",
+  "translateCommand": "npm run write-translations",
+  "buildCommand": "npm run build",
+  "buildOutput": "build",
+  "packageManager": "npm"
+}
