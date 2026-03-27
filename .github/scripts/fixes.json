@@ -1,0 +1,13 @@
+{
+  "description": "Repository-specific fixes for PaloAltoNetworks/docusaurus-template-openapi-docs",
+  "fixes": {
+    "docusaurus.config.ts": [
+      {
+        "type": "replace",
+        "find": "  plugins: [\n    [\n      \"docusaurus-plugin-openapi-docs\",",
+        "replace": "  plugins: [\n    function pathFallback() {\n      return {\n        name: 'path-fallback',\n        configureWebpack() {\n          return {\n            resolve: {\n              fallback: { path: require.resolve('path-browserify') },\n            },\n          };\n        },\n      };\n    },\n    [\n      \"docusaurus-plugin-openapi-docs\",",
+        "comment": "postman-code-generators uses Node.js path module; polyfill it for browser bundling"
+      }
+    ]
+  }
+}
