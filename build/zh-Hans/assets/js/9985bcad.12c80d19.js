@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocusaurus_template_openapi_docs=self.webpackChunkdocusaurus_template_openapi_docs||[]).push([["8587"],{97860(s){s.exports=JSON.parse('{"tags":[{"label":"test","permalink":"/zh-Hans/docs/tags/test","count":6}]}')}}]);
